@@ -3,6 +3,9 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
+  background-color: #EFEFEF;
+
+  display: flex;
 }
 
 .col-8{
@@ -22,7 +25,7 @@
   background-color:#72C3DC;
   padding: 10px;
   margin: 10px;
-  width: 70px;
+  width: 150px;
   box-shadow: 0px 4px #2F454E;
 }
 
@@ -54,8 +57,22 @@
 
 @media screen and (max-width: 576px) {
 
+  .container {
+    background-color: #FFFFFF;
+    flex-direction: column-reverse;
+  }
+
   .col-12 {
     width: 100%;
+  }
+
+  .btn-center {
+    transform: translateX(55%);
+    width: fit-content;
+  }
+
+  .btn {
+    width: 70px;
   }
 
   .tile-wrapper {
@@ -71,7 +88,7 @@
   }
 
   .tile {
-    background-color: #33333329;
+    background-color: #EFEFEF;
     height: 50px;
     width: 100%;
     text-align: center;
